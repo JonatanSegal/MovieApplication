@@ -74,10 +74,10 @@ public class MovieApplicationServices {
     }
 
     public String tenRandomString(){
-        getTenRandom();
+        ArrayList<Movie> movies = getTenRandom();
         String s = "10 movies sorted";
         for(int i = 0; i < 10; i++){
-            s = s +"<br>" + getTenRandom().get(i) + "<br>";
+            s = s +"<br>" + movies.get(i) + "<br>";
         }
         return s;
     }

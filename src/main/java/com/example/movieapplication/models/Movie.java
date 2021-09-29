@@ -20,13 +20,13 @@ public class Movie implements Comparable<Movie> {
 
     @Override
     public String toString(){
-        return "Release year: " + getYear() +
-                "\n,Runtime: " + getLengthInMin() +
-                "\n, Realese year: " + getYear() +
-                "\n,Title: " + getTitle() +
-                "\n,Subject: "+ getSubject() +
-                "\n,Popularity: "+ getPopularity()+
-                "\n,Award: " + awardString();
+        return "Release year: " + getYear() +","+
+                "Runtime: " + getLengthInMin() +","+
+                "Realese year: " + getYear() +","+
+                "Title: " + getTitle() +","+
+                "Subject: "+ getSubject() +","+
+                "<b>Popularity: "+ getPopularity()+"</b>,"+
+                "Award: " + awardString();
     }
 
     public int getYear() {
